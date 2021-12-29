@@ -165,7 +165,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     FrameworksOverlayRMX2151 \
-    FrameworksOverlayRMX2161
+    FrameworksOverlayRMX2161 \
+    SettingsProviderOverlayRM6785
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS += *
