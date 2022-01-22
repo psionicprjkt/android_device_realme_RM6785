@@ -2566,7 +2566,7 @@ vendor/etc/init/hw/init.project.rc
 vendor/etc/init/hw/init.connectivity.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/init_connectivity.rc
-vendor/ueventd.rc
+-vendor/ueventd.rc:vendor/etc/ueventd.rc;MODULE=ueventd.mtk.rc
 
 # Seccomp
 vendor/etc/seccomp_policy/mediacodec.policy
