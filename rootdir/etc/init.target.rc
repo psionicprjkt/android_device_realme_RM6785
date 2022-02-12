@@ -30,8 +30,13 @@ on property:sys.boot_completed=1
     # Update fastcharge firmware
     write /proc/fastchg_fw_update 1
 
-    # OTG
-    write /sys/class/power_supply/usb/otg_switch 1
+    # USB-OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0666 /sys/class/power_supply/usb/otg_switch
+
+    # Smart Charging
+    chown system system /sys/class/power_supply/battery/mmi_charging_enable
+    chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
 
 on property:persist.vendor.radio.port_index=""
     setprop sys.usb.config adb
