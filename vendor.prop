@@ -60,7 +60,7 @@ ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 
 # GPS
 ro.oppo.mtk_gps_mpe=1
-ro.vendor.mtk_log_hide_gps=0
+ro.vendor.mtk_log_hide_gps=1
 
 # Graphics
 debug.mediatek.disp_decompress=1
