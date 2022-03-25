@@ -17,6 +17,10 @@ on post-fs-data
     # Services
     setprop init.svc.console stopped
 
+    # AudioDump
+    mkdir /data/vendor/audiohal 0771 system audio
+    mkdir /data/vendor/audiohal/audio_param 0771 system audio
+
 on property:sys.boot_completed=1
     # ZRAM
     swapon_all /vendor/etc/fstab.mt6785
