@@ -173,3 +173,8 @@ dalvik.vm.heaptargetutilization=0.75
 # Wifi
 ro.vendor.wifi.sap.interface=ap0
 wifi.concurrent.interface=ap0
+
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
