@@ -44,4 +44,4 @@ system_ext                                       /system_ext           erofs   r
 /devices/platform/usb3_xhci*                     auto                  vfat    defaults                                            voldmanaged=usbotg:auto
 
 # Swap
-/dev/block/zram0                                 none                  swap    defaults                                            zramsize=55%,max_comp_streams=8
+/dev/block/zram0                                 none                  swap    defaults                                            zramsize=55%,max_comp_streams=8,zram_backingdev_size=512M
