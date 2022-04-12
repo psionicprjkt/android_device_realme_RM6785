@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Doze
+PRODUCT_PACKAGES += \
+    OplusDoze
+
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-RM6785
@@ -267,7 +271,9 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/oplus
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
