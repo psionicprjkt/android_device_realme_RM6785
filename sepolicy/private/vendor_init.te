@@ -1,1 +1,3 @@
+get_prop(vendor_init, cabc_prop)
 get_prop(vendor_init, dt2w_prop)
+get_prop(vendor_init, perf_prop)
