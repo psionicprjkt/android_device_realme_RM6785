@@ -11,3 +11,6 @@ vendor.nxp.nxpnfc::INxpNfc u:object_r:hal_nfc_hwservice:s0
 # Radio
 vendor.oplus.hardware.radio::IOplusRadio u:object_r:hal_telephony_hwservice:s0
 vendor.oplus.hardware.appradio::IOplusAppRadio u:object_r:hal_telephony_hwservice:s0
+
+# Wifi
+vendor.oplus.hardware.wifi.supplicant::IOplusSupplicant u:object_r:hal_wifi_supplicant_hwservice:s0
