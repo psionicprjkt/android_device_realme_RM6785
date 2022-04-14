@@ -4,3 +4,4 @@ genfscon proc  /fp_id u:object_r:proc_fingerprint:s0
 genfscon proc  /fastchg_fw_update u:object_r:proc_fastchg_fw:s0
 genfscon proc  /oplusSensorFeature/is_support_mtk_cali u:object_r:proc_sensor_feature:s0
 genfscon sysfs /devices/platform/sia81xx@L/is_81xx u:object_r:sysfs_sia81xx:s0
+genfscon sysfs /devices/virtual/oplus_sensor/m_virtual_sensor_misc u:object_r:sysfs_virtual_sensor:s0
