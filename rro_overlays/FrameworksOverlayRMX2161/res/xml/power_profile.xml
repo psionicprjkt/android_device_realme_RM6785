@@ -28,8 +28,8 @@
        significantly, so should be measured on the shipping platform
        with a power meter. -->
   <item name="ambient.on">27</item>  <!-- ~100mA -->
-  <item name="screen.on">75</item>  <!-- ~100mA -->
-  <item name="screen.full">260</item>  <!-- ~100mA -->
+  <item name="screen.on.display0">75</item>  <!-- ~100mA -->
+  <item name="screen.full.display0">260</item>  <!-- ~100mA -->
   <item name="bluetooth.active">0.1</item> <!-- Bluetooth data transfer, ~10mA -->
   <item name="bluetooth.on">0.1</item>  <!-- Bluetooth on & connectable, but not connected, ~0.1mA -->
   <item name="wifi.on">1</item>  <!-- ~3mA -->
