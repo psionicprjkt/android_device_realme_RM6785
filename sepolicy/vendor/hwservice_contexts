@@ -7,6 +7,7 @@ vendor.oplus.hardware.biometrics.fingerprintservice::IFingerprintHalService u:ob
 
 # NFC
 vendor.nxp.nxpnfc::INxpNfc u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse u:object_r:hal_nfc_hwservice:s0
 
 # Radio
 vendor.oplus.hardware.radio::IOplusRadio u:object_r:hal_telephony_hwservice:s0
