@@ -43,6 +43,15 @@ LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := ueventd.oplus.rc
+LOCAL_MODULE_STEM  := ueventd.rc
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/ueventd.oplus.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ODM_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := perf_profile.sh
 LOCAL_SRC_FILES := bin/perf_profile.sh
 LOCAL_MODULE_CLASS := EXECUTABLES

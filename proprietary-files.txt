@@ -2700,6 +2700,7 @@ vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 -vendor/bin/hw/hostapd|22d0e25a3779bd1a8335402f689e5ed2d3eca83a
 
 # Wifi
+odm/etc/wifi/txpowerctrl.cfg
 -vendor/bin/hostapd_cli
 -vendor/bin/hw/wpa_supplicant
 -vendor/bin/stp_dump3
