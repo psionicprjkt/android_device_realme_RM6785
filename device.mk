@@ -16,6 +16,10 @@ PRODUCT_COMPRESSED_APEX := false
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RM6785/RM6785-vendor.mk)
 
+# Parts
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
