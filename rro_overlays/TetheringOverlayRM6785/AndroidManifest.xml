@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.networkstack.tethering.RM6785">
+
     <overlay
-      android:targetPackage="com.android.networkstack.tethering"
-      android:targetName="TetheringConfig"
-      android:isStatic="true"
-      android:priority="0"/>
+        android:isStatic="true"
+        android:priority="0"
+        android:targetName="TetheringConfig"
+        android:targetPackage="com.android.networkstack.tethering" />
 </manifest>

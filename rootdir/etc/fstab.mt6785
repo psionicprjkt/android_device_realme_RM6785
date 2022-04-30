@@ -19,7 +19,7 @@ system_ext                                       /system_ext           erofs   r
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4    noatime,nosuid,nodev,discard,data=journal,commit=1  wait,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cache     /cache                ext4    noatime,nosuid,nodev,noauto_da_alloc,discard        wait,check,formattable
 /dev/block/platform/bootdevice/by-name/cache     /cache                f2fs    noatime,nosuid,nodev,discard,noflush_merge          wait,check,formattable
-/dev/block/platform/bootdevice/by-name/userdata  /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=block,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/userdata  /data                 ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=block,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/userdata  /data                 f2fs    noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/recovery  /recovery             emmc    defaults                                            first_stage_mount,nofail
 /dev/block/platform/bootdevice/by-name/boot      /boot                 emmc    defaults                                            first_stage_mount,nofail

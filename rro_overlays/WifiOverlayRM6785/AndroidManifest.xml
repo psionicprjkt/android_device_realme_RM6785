@@ -13,9 +13,10 @@
 <!-- Pixel specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.RM6785">
+
     <overlay
-      android:targetPackage="com.android.wifi.resources"
-      android:targetName="WifiCustomization"
-      android:isStatic="true"
-      android:priority="0"/>
+        android:isStatic="true"
+        android:priority="0"
+        android:targetName="WifiCustomization"
+        android:targetPackage="com.android.wifi.resources" />
 </manifest>
