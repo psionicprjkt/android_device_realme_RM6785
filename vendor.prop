@@ -83,6 +83,9 @@ ro.lmk.kill_timeout_ms=100
 ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
 
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # MTK
 ro.vendor.mediatek.platform=MT6785
 
