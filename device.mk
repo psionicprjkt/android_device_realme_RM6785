@@ -243,6 +243,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor \
     android.hardware.power@1.3.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \

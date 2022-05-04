@@ -2312,7 +2312,6 @@ vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc|38abe003339d1fbdaa
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc|1a7c82fde63ddf0815938f554550a05edb473f39
 vendor/etc/power_app_cfg.xml|7b3aa578829485c04177ac8a54cbf42de7883618
 vendor/etc/powercontable.xml|af748f636609898e59fbca07c705dc69f1a6c2e0
-vendor/etc/powerscntbl.xml|2fc72a205cb6bab91d862ea794ad00760d7d9dad
 vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-mtk-default.xml|445d46fa23201f890de335024cd5dff3e1d3fd29
 -vendor/lib64/android.hardware.power-service-mediatek.so|21dbc73eae4dbacb17fe98d2e55f307d8b7c31f6
 -vendor/lib64/hw/power.default.so|37a02e86d9769fefcfafef73ebedbebeea137a08
