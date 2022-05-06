@@ -1,6 +1,9 @@
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
