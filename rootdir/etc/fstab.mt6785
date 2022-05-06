@@ -4,8 +4,8 @@
 
 #<src>                                           <mnt_point>           <type>  <mnt_flags and options>                             <fs_mgr_flags>
 # Core Partitions (Dynamic Partitions)
-system                                           /system               ext4    ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-system                                           /system               erofs   ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                           /system               ext4    ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,readahead_size_kb=128,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                           /system               erofs   ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,readahead_size_kb=128,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 vendor                                           /vendor               ext4    ro                                                  wait,avb,logical,first_stage_mount
 vendor                                           /vendor               erofs   ro                                                  wait,avb,logical,first_stage_mount
 product                                          /product              ext4    ro                                                  wait,logical,first_stage_mount
@@ -19,8 +19,8 @@ system_ext                                       /system_ext           erofs   r
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4    noatime,nosuid,nodev,discard,data=journal,commit=1  wait,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cache     /cache                ext4    noatime,nosuid,nodev,noauto_da_alloc,discard        wait,check,formattable
 /dev/block/platform/bootdevice/by-name/cache     /cache                f2fs    noatime,nosuid,nodev,discard,noflush_merge          wait,check,formattable
-/dev/block/platform/bootdevice/by-name/userdata  /data                 ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=block,fileencryption=aes-256-xts
-/dev/block/platform/bootdevice/by-name/userdata  /data                 f2fs    noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/userdata  /data                 ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=block,fileencryption=aes-256-xts,readahead_size_kb=128
+/dev/block/platform/bootdevice/by-name/userdata  /data                 f2fs    noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts,readahead_size_kb=128
 /dev/block/platform/bootdevice/by-name/recovery  /recovery             emmc    defaults                                            first_stage_mount,nofail
 /dev/block/platform/bootdevice/by-name/boot      /boot                 emmc    defaults                                            first_stage_mount,nofail
 /dev/block/platform/bootdevice/by-name/dtbo      /dtbo                 emmc    defaults                                            defaults
