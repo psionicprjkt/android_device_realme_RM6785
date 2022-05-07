@@ -11,6 +11,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+iorapd.perfetto.enable=true
 
 # performance
 ro.mtk_perf_simple_start_win=1
