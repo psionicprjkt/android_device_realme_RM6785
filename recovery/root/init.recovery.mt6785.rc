@@ -5,6 +5,10 @@ on fs
     wait /dev/block/platform/bootdevice/
     symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
 
+on property:sys.boot_completed=1
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 service init-recovery-mt6785-sh /init.recovery.mt6785.sh
     user root
     group root
