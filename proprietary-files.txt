@@ -2690,10 +2690,10 @@ vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 -vendor/lib64/libunwindstack-v30.so|d309107e725a410e7ad05561a04359065e7c230e
 -vendor/lib64/libutils-v30.so|cb220c1647d358cc7252e27effd7d3fccdb062a5
 
-# Vibrator - from Ronin_00WW-user 11 RP1A.200720.011 00WW_1_100 release-keys
--vendor/bin/hw/android.hardware.vibrator-service.mediatek|6a99b17250dae08eeeb4a720df65ef61b0542021
+# Vibrator - from Nokia/Wolverine_00WW/WVR_sprout:12/SP1A.210812.016/00WW_3_210:user/release-keys
+-vendor/bin/hw/android.hardware.vibrator-service.mediatek|97513ed442fc08961f6556e129d3f216db3bc4bf
 vendor/etc/init/vibrator-mtk-default.rc|63f7577081fc8aca1d3cae9a32a77021ff041796
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml|1a42ecd34f950e3737c61247b2d1d85039643729
+vendor/etc/vintf/manifest/vibrator-mtk-default.xml|7ce60b652d1eb429806d64814ed9af78d9431fc0
 
 # Wifi - From merlin-user-11-RP1A.200720.011-V12.5.2.0.RJOMIXM-release-keys
 -vendor/bin/hw/hostapd|22d0e25a3779bd1a8335402f689e5ed2d3eca83a
