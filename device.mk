@@ -189,6 +189,10 @@ PRODUCT_PACKAGES += \
     FrameworksOverlayRMX2161 \
     SettingsProviderOverlayRM6785
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
